@@ -1,11 +1,14 @@
+import Hoc from "../../components/hoc";
 import ProductScroll from "./productScroll";
 
 const Home = () => {
   return (
-    <div>
-      {/* <CategoryScroll /> */}
-      <ProductScroll />
-    </div>
+    <Hoc>
+      <div>
+        {/* <CategoryScroll /> */}
+        <ProductScroll />
+      </div>
+    </Hoc>
   );
 };
 

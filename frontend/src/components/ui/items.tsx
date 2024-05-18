@@ -48,11 +48,7 @@ type SearchedProduct = {
 const SearchedProduct = ({ product }: SearchedProduct) => {
   return (
     <div className="flex items-center w-full h-[4rem] gap-2 cursor-pointer">
-      <img
-        alt={""}
-        src={"/testcata.png"}
-        className="h-full object-contain"
-      />
+      <img alt={""} src={"/testcata.png"} className="h-full object-contain" />
       <span className="line-clamp-1">{productData.description}</span>
     </div>
   );

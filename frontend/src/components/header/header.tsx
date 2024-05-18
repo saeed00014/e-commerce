@@ -9,7 +9,7 @@ import { FaMagnifyingGlass } from "react-icons/fa6";
 const Header = () => {
   const [isSearch, setIsSearch] = useState(false);
   return (
-    <header className="relative flex items-center justify-between w-full h-[3rem] bg-ship">
+    <header className="fixed top-0 left-0 right-0 flex items-center justify-between w-full h-[3rem] border-b bg-ship">
       <nav className="flex justify-between items-center px-4 w-full h-full ">
         <Logo />
         <div className="flex h-full">
