@@ -1,4 +1,3 @@
-import CategoryScroll from "./categoryScroll";
 import ProductScroll from "./productScroll";
 
 const Home = () => {

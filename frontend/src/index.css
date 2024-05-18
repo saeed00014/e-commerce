@@ -8,11 +8,11 @@
 }
 
 * {
-  overflow: hidden;
   direction: rtl;
 }
 
 .bory {
+  overflow: hidden;
 }
 
 ::-webkit-scrollbar {

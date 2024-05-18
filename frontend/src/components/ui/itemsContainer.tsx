@@ -16,7 +16,7 @@ const ItemsScroller = ({ children, id, classNames }: Props) => {
     <div
       id={id}
       className={cn(
-        "flex items-center w-full max-w-max h-full overflow-x-auto pb-2",
+        "flex items-center w-full max-w-max h-full overflow-y-hidden overflow-x-auto pb-2",
         classNames
       )}
     >
