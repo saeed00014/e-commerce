@@ -5,7 +5,8 @@ export const productData = {
   color: "رنگ",
   size: "اندازه",
   quantity: "تعداد",
-  total: "قیمت کل"
+  total: "قیمت کل",
+  groupBy: "دسته بندی"
 }
 
 export const header = {
@@ -22,5 +23,5 @@ export const cardData = {
   price: "قیمت",
   quantity: "تعداد",
   total: "کل",
-  remove: "حذف"
+  remove: "حذف", 
 }

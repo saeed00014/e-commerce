@@ -1,4 +1,6 @@
+import { Link } from "react-router-dom";
 import { productData } from "../../assets/data";
+import cn from "../../utils/merger";
 
 const CategoryHalfCircle = () => {
   const title = "کفش";
@@ -16,9 +18,20 @@ const CategoryHalfCircle = () => {
   );
 };
 
-const ProductCard = () => {
+type ProductCard = {
+  product: any;
+  classNames?: string;
+};
+
+const ProductCard = ({ product, classNames }: ProductCard) => {
   return (
-    <div className="relative flex flex-col items-center justify-end px-3 py-1 h-full w-[210px] min-w-[210px] max-w-[210px] cursor-pointer">
+    <Link
+      to="/product/1"
+      className={cn(
+        "relative flex flex-col items-center justify-end px-3 py-1 h-full w-[210px] min-w-[210px] max-w-[210px] cursor-pointer",
+        classNames
+      )}
+    >
       <div className="absolute top-0 left-0 right-0 bottom-[68px] flex justify-center items-center">
         <img
           src="/testcata.png"
@@ -37,7 +50,7 @@ const ProductCard = () => {
         </div>
         <span className="line-clamp-1 pb-1">{productData.description}</span>
       </div>
-    </div>
+    </Link>
   );
 };
 

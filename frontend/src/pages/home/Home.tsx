@@ -4,7 +4,7 @@ import ProductScroll from "./productScroll";
 const Home = () => {
   return (
     <Hoc>
-      <div>
+      <div className="bg-lightMoon">
         {/* <CategoryScroll /> */}
         <ProductScroll />
       </div>

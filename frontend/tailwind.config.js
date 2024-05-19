@@ -7,23 +7,38 @@ const config = {
         ship: "rgb(255, 255, 255)",
         dark: "rgb(0, 0, 0)",
         moon: "rgb(80, 80, 80)",
-        gray: "rgb(200, 200, 200)",
+        lightMoon: "rgb(215, 215, 215)",
+        blood: "rgb(252, 68, 68)",
         lightBlood: "rgb(252, 129, 129)",
         water: "#22d3ee",
         darkwater: "#0e7490",
       },
+      borderColor: {
+        DEFAULT: "rgb(200, 200, 200)",
+      },
+      boxShadow: {
+        btnHoverDark: "0 0 40px 40px rgba(0, 0, 0, .2) inset",
+        btnHoverLight: "0 0 40px 40px rgba(255, 255, 255, .2) inset",
+      },
       keyframes: {
         downUnFade: {
           "0%": {
-            opacity: .5,
-            top: "2.8rem"
+            opacity: 0.5,
+            top: "2.8rem",
           },
           "100%": {
             opacity: 1,
-            top: "3.2rem"
-          }
-        }
-      }
+            top: "3.2rem",
+          },
+        },
+      },
+      screens: {
+        sm: "320px",
+        md: "640px",
+        lg: "960px",
+        xl: "1280px",
+        xxl: "1780px",
+      },
     },
   },
 };

@@ -11,7 +11,7 @@ const SearchContainer = ({ setIsSearch }: Props) => {
   return (
     <div
       id="searchproductcon"
-      className="absolute left-2 top-[3rem] flex flex-col py-1 h-[16rem] w-[30rem] bg-ship rounded-[.6rem] shadow-2xl opacity-50 animate-[downUnFade_0.3s_linear_forwards] z-50"
+      className="absolute left-2 top-[3rem] flex flex-col py-1 h-[16rem] w-[30rem] bg-ship rounded-[.6rem] shadow-2xl opacity-50 animate-[downUnFade_0.3s_linear_forwards] z-[100]"
     >
       <div
         id="searchproductcon"

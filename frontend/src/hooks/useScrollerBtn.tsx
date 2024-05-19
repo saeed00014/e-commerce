@@ -10,7 +10,7 @@ const UseScrollerBtn = ({ direction, id, setBtnFade }: Props) => {
   const clientWidth = scrollTarget?.clientWidth || 0;
   const scrollWidth = scrollTarget?.scrollWidth || 0;
   const maxScrollLeft = clientWidth - scrollWidth;
-  const scrollGap = -maxScrollLeft / 4;
+  const scrollGap = 210;
   if (direction === "left") {
     if (scrollLeft === maxScrollLeft) {
       setBtnFade("left");

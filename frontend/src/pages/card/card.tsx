@@ -5,7 +5,7 @@ import CardTotal from "./cardTotal";
 const Card = () => {
   return (
     <Hoc>
-      <section className="flex px-2 w-full h-full gap-1 bg-ship overflow-y-scroll">
+      <section className="flex px-2 py-2 w-full h-full gap-1 bg-ship overflow-y-scroll">
         <CardItems />
         <CardTotal />
       </section>

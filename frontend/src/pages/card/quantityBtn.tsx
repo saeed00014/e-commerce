@@ -7,7 +7,9 @@ const QuantityBtn = () => {
       <div className="relative flex justify-center items-center w-[4rem] h-[1.6rem] border">
         <span className="pr-1 min-w-[50%] cursor-pointer">-</span>
         <span className="absolute">1</span>
-        <span className="flex justify-end pl-1 min-w-[50%] cursor-pointer">+</span>
+        <span className="flex justify-end pl-1 min-w-[50%] cursor-pointer">
+          +
+        </span>
       </div>
     </div>
   );

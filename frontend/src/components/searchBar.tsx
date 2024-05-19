@@ -16,7 +16,7 @@ const SearchBar = ({ classNames, placeHolder, id }: Props) => {
       <input
         id={id}
         placeholder={placeHolder}
-        className="rounded-full h-full bg-gray pr-[2.8rem] pl-[1rem]"
+        className="rounded-full h-full bg-lightMoon pr-[2.8rem] pl-[1rem]"
       />
     </form>
   );

@@ -1,4 +1,4 @@
-import { productData } from "../../assets/data";
+import { cardData, productData } from "../../assets/data";
 import ColorPicker from "./colorPicker";
 import QuantityBtn from "./quantityBtn";
 import SizePicker from "./sizePicker";
@@ -9,7 +9,7 @@ type Props = {
 
 const ProductCard = ({ Product }: Props) => {
   return (
-    <div className="flex items-center py-2 px-2 w-full max-w-[500px] gap-2 border">
+    <div className="flex items-center py-2 px-2 w-full h-fit max-w-[500px] gap-2 border">
       <div className="flex w-full gap-2">
         <img
           alt={""}
@@ -29,7 +29,9 @@ const ProductCard = ({ Product }: Props) => {
               <span className="text-[.7rem]">{productData.price}</span>
               <span>125</span>
             </div>
-            <button className="border px-2"> x حذف </button>
+            <span className="flex justify-center items-center w-[3rem] rounded-full cursor-pointer bg-ship hover:brightness-90 duration-500">
+              {cardData.remove}
+            </span>
           </div>
         </div>
       </div>
