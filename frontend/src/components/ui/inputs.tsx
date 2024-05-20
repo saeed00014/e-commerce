@@ -17,4 +17,13 @@ const Select = ({ initialValue, options, classNames }: Select) => {
   );
 };
 
-export { Select };
+type CheckBox = {
+  id: string;
+  classNames?: string;
+};
+
+const CheckBox = ({ id, classNames }: CheckBox) => {
+  return <input id={id} type="checkbox" className={cn("", classNames)} />;
+};
+
+export { Select, CheckBox };

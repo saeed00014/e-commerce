@@ -6,16 +6,19 @@ export const productData = {
   size: "اندازه",
   quantity: "تعداد",
   total: "قیمت کل",
-  groupBy: "دسته بندی"
-}
+  groupBy: "دسته بندی",
+  allProducts: "همه محصولات",
+};
 
 export const header = {
-  home: "خانه",
+  home: "صفحه نخست",
   products: "محصولات",
   category: "دسته بندی ها",
   card: "سبد خرید",
-  searchProducts: "جستحوی محصولات"
-}
+  searchProducts: "جستحوی محصولات",
+  onlyDisCounted: "فقط تخفیف دار",
+  search: "جستحو"
+};
 
 export const cardData = {
   products: "محصولات",
@@ -23,5 +26,14 @@ export const cardData = {
   price: "قیمت",
   quantity: "تعداد",
   total: "کل",
-  remove: "حذف", 
-}
+  remove: "حذف",
+};
+
+export const categories = {
+  mobile: "موبایل",
+  laptop: "لپ تاپ",
+  headset: "هندزفیری و هدفون",
+  pc: "کامپیوتر",
+};
+
+export const categories1 = ["موبایل", "لپ تاپ", "هندزفری و هدفون", "کامپیوتر"];

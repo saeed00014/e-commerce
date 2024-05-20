@@ -2,19 +2,28 @@ import { Link } from "react-router-dom";
 import { productData } from "../../assets/data";
 import cn from "../../utils/merger";
 
-const CategoryHalfCircle = () => {
+type CategoryHalfCircle = {
+  category: any;
+};
+
+const CategoryHalfCircle = ({ category }: CategoryHalfCircle) => {
   const title = "کفش";
   return (
-    <div className="relative flex flex-col items-center justify-center w-[12rem] min-w-[12rem] h-[12rem] min-h-[12rem] rounded-full cursor-pointer">
-      <img
-        alt={title}
-        src={"/testcata.png"}
-        className="h-full w-fit object-contain"
-      />
-      <span className="absolute left-0 right-0 bottom-0 flex justify-center items-center py-[.4rem] h-fit bg-ship">
+    <Link
+      to="/products?category="
+      className="relative flex flex-col items-center justify-center w-fit h-fit rounded-full cursor-pointer"
+    >
+      <div className="w-[7rem] min-w-[7rem] h-[7rem] min-h-[7rem]">
+        <img
+          alt={title}
+          src={"/testcata.png"}
+          className="h-full w-fit object-contain"
+        />
+      </div>
+      <span className="flex justify-center items-center h-fit text-[1.2rem]">
         {title}
       </span>
-    </div>
+    </Link>
   );
 };
 
@@ -28,7 +37,7 @@ const ProductCard = ({ product, classNames }: ProductCard) => {
     <Link
       to="/product/1"
       className={cn(
-        "relative flex flex-col items-center justify-end px-3 py-1 h-full w-[210px] min-w-[210px] max-w-[210px] cursor-pointer",
+        "relative flex flex-col items-center justify-end px-3 py-1 h-[15rem] w-[210px] min-w-[210px] max-w-[210px] cursor-pointer bg-ship rounded-[1rem]",
         classNames
       )}
     >

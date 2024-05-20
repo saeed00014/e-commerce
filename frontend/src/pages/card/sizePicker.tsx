@@ -3,7 +3,7 @@ import { Select } from "../../components/ui/inputs";
 
 const SizePicker = () => {
   return (
-    <div className="flex gap-1">
+    <div className="flex items-center gap-1">
       <span>{productData.size} :</span>
       <Select options={[""]} />
     </div>

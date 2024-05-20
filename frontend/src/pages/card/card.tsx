@@ -5,9 +5,11 @@ import CardTotal from "./cardTotal";
 const Card = () => {
   return (
     <Hoc>
-      <section className="flex px-2 py-2 w-full h-full gap-1 bg-ship overflow-y-scroll">
-        <CardItems />
-        <CardTotal />
+      <section className="flex p-2 md:pb-2 pb-[45px] w-full max-w-[1400px] h-full ">
+        <div className="flex w-full h-full overflow-y-auto no-scrollbar gap-1"> 
+          <CardItems />
+          <CardTotal />
+        </div>
       </section>
     </Hoc>
   );

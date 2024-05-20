@@ -1,11 +1,11 @@
-import { productData } from "../../assets/data"
-import { ProductCard } from "../../components/ui/items"
-import { ItemsScroller } from "../../components/ui/itemsContainer"
+import { productData } from "../../assets/data";
+import { ProductCard } from "../../components/ui/items";
+import { ItemsScroller } from "../../components/ui/itemsContainer";
 
 const ProductScroll = () => {
   return (
-    <section className="flex flex-col px-4 pt-4 pb-2 bg-ship ">
-      <div className="text-[1.3rem]">{productData.title}</div>
+    <section className="flex flex-col md:px-3 px-2 pt-4 pb-2 h-fit w-full bg-ship rounded-[1rem]">
+      <div className="text-[1.3rem] px-2">{productData.title}</div>
       <ItemsScroller id="productScroller" classNames="h-[15rem]">
         <ProductCard />
         <ProductCard />
@@ -23,7 +23,7 @@ const ProductScroll = () => {
         <ProductCard />
       </ItemsScroller>
     </section>
-  )
-}
+  );
+};
 
-export default ProductScroll
+export default ProductScroll;

@@ -9,14 +9,17 @@ type Props = {
 
 const SearchBar = ({ classNames, placeHolder, id }: Props) => {
   return (
-    <form className={cn("relative flex items-center", classNames)}>
-      <label htmlFor={id} className="absolute right-[1rem] pointer-events-none">
+    <form className={cn("relative flex items-center md:w-[16rem] w-[14rem]", classNames)}>
+      <label
+        htmlFor={id}
+        className="absolute md:right-[1rem] right-[.8rem] pointer-events-none"
+      >
         <FaMagnifyingGlass />
       </label>
       <input
         id={id}
         placeholder={placeHolder}
-        className="rounded-full h-full bg-lightMoon pr-[2.8rem] pl-[1rem]"
+        className="rounded-full h-full w-full bg-lightMoon md:pr-[2.8rem] pr-[2.2rem] pl-[1rem]"
       />
     </form>
   );

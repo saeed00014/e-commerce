@@ -7,7 +7,7 @@ type Props = {
 
 const NavLink = ({ path, text }: Props) => {
   return (
-    <Link className="flex items-center h-full px-4" to={path}>
+    <Link className="flex items-center justify-center min-w-max h-full px-4" to={path}>
       {text}
     </Link>
   );

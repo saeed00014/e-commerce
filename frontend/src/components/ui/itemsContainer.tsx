@@ -13,34 +13,44 @@ const ItemsScroller = ({ children, id, classNames }: Props) => {
   const [btnFade, setBtnFade] = useState("");
 
   return (
-    <div
-      id={id}
-      className={cn(
-        "flex items-center w-full max-w-max h-full overflow-y-hidden overflow-x-auto pb-2",
-        classNames
-      )}
-    >
+    <div className="relative flex items-center w-full">
       <div
         onClick={() =>
-          UseScrollerBtn({ direction: "left", id: id, setBtnFade: setBtnFade })
+          UseScrollerBtn({
+            direction: "left",
+            id: id,
+            setBtnFade: setBtnFade,
+          })
         }
         className={`flex items-center`}
       >
         <ScrollerBtn
-          classNames={`left-1 ${
+          classNames={`-left-2 z-20 ${
             btnFade === "left" && "opacity-55 border-darkwater z-20"
           }`}
         />
       </div>
-      {children}
+      <div
+        id={id}
+        className={cn(
+          "flex items-center pb-2 w-full max-w-max h-full overflow-y-hidden overflow-x-auto",
+          classNames
+        )}
+      >
+        {children}
+      </div>
       <div
         onClick={() =>
-          UseScrollerBtn({ direction: "right", id: id, setBtnFade: setBtnFade })
+          UseScrollerBtn({
+            direction: "right",
+            id: id,
+            setBtnFade: setBtnFade,
+          })
         }
         className="flex items-center"
       >
         <ScrollerBtn
-          classNames={`right-1 rotate-[180deg] ${
+          classNames={`-right-2 rotate-[180deg] ${
             btnFade === "right" && "opacity-55 border-darkwater z-20"
           }`}
         />

@@ -1,13 +1,13 @@
 import Hoc from "../../components/hoc";
-import AllProducts from "./allProducts";
 import Header from "./header";
+import ProductsCategory from "./productsCategory";
 
 const Products = () => {
   return (
     <Hoc>
-      <section className="flex flex-col items-center w-full h-full">
+      <section className="flex flex-col items-center w-full h-full overflow-y-auto no-scrollbar">
         <Header />
-        <AllProducts />
+        <ProductsCategory />
       </section>
     </Hoc>
   );

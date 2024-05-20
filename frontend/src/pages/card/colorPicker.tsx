@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { IoIosArrowBack } from "react-icons/io";
+import { MdDone } from "react-icons/md";
 
 type Props = {
   colorSet: string[];
@@ -9,7 +9,7 @@ type Props = {
 const ColorPicker = ({ colorSet, color }: Props) => {
   const [isPickingColor, setIsPickingColor] = useState(false);
   const colorsett = ["#32a852", "#32a4a8", "#a89a32"];
-  const colorChoosed = "red";
+  const colorChoosed = "#32a4a8";
 
   const handleColorPicker = (color1: string) => {
     setIsPickingColor((prev) => !prev);
@@ -17,28 +17,19 @@ const ColorPicker = ({ colorSet, color }: Props) => {
 
   return (
     <div className="flex gap-2">
-      {isPickingColor ? (
-        colorsett.map((color) => {
-          return (
-            <span
-              style={{ background: color }}
-              onClick={() => handleColorPicker(color)}
-              className={`flex w-[1.6rem] h-[1.6rem] rounded-full cursor-pointer`}
-            ></span>
-          );
-        })
-      ) : (
-        <div
-          onClick={() => handleColorPicker(colorChoosed)}
-          className="flex items-center cursor-pointer"
-        >
+      {colorsett.map((color) => {
+        return (
           <span
-            style={{ background: colorChoosed }}
-            className={`flex w-[1.6rem] h-[1.6rem] rounded-full`}
-          ></span>
-          <IoIosArrowBack />
-        </div>
-      )}
+            style={{ background: color }}
+            onClick={() => handleColorPicker(color)}
+            className={`flex justify-center items-center w-[2rem] h-[2rem] rounded-full cursor-pointer ${
+              color === colorChoosed && "border-2 border-darkwater"
+            }`}
+          >
+            {color === colorChoosed && <MdDone className="text-[1.3rem]" />}
+          </span>
+        );
+      })}
     </div>
   );
 };
