@@ -3,7 +3,7 @@ import Home from "./pages/home/Home";
 import Header from "./components/header/header";
 import Card from "./pages/card/card";
 import Products from "./pages/products/products";
-import Product from "./pages/product/product";
+import Product from "./pages/product/productPage";
 import "./index.css";
 
 function App() {
